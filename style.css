@@ -2,8 +2,8 @@ body{
   margin: 0 auto;
   font-size: 18px;
   font-family: 'Verdana';
-  background-color: #303C49;
-  color: #ffffff;
+  background-color: rgb(0, 0, 0);
+  color: #b9d2f7;
 }
 
 h1{
@@ -64,9 +64,11 @@ button, a{
 
 .btn{
   font-size: 18px;
-  background-color: #E40045;
-  border: 1px solid #E40045;
-  color: white;
+  background-color: #b9d2f7;
+  border: 1px solid #b9d2f7;
+  color: black;
+  background-color: black;
+  color: #b9d2f7
 
 }
 .btn-primary{
@@ -85,7 +87,7 @@ button, a{
 }
 .btn-link{
   text-decoration: underline;
-  color: #E40045;
+  color: black;
   font-size: 24px;
   margin-top: 20px;
   background: none;
@@ -96,7 +98,8 @@ button, a{
   margin-bottom: 20px;
 }
 .btn-primary:hover, .btn-icon:hover{
-  background-color: #E40045;
+  background-color: #b9d2f7;
+  color: black;
 }
 .button-bar{
   position: fixed;
