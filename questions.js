@@ -1,4 +1,4 @@
-var questions = [
+let questions = [
     'What was your first job?',
     'Have you ever met anyone famous?',
     'What are you reading right now?',

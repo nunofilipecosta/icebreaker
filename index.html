@@ -17,6 +17,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
   <script src="./questions.js"></script>
+  <script src="./functions.js"></script>
   <script async defer src="https://buttons.github.io/buttons.js"></script>
 
   <title>Icebreaker</title>
@@ -36,7 +37,9 @@
       <!-- Launch page -->
       <div id="start" class="container align-center-top">
         <div style="display: block">
-          <button class="btn btn-primary" id="pick" onclick="start();">Generate question</button>
+          <div onclick="reload();">
+            <button class="btn btn-primary" id="pick" onclick="start();">Generate question</button>
+          </div>
         </div>
       </div>
 
@@ -48,34 +51,11 @@
           <h1 id="questions">quotes</h1>
         </div>
         <div class="button-bar">
-          <div><button class="btn-link large" onclick="reload();"><img src="Images/arrow.svg"/></button></div>
+          <button class="btn btn-primary" id="pick" onclick="reload();">One more?</button>
           <div><button class="btn-link" onclick="restart();"><img src="Images/close.svg"></button></div>
         </div>
       </div>
     </div>
     <div>
-    </body>
-    </html>
-    <script>
-    function start(){
-      document.getElementById('start').style.display='none';
-      document.getElementById('play').style.display='flex';
-      document.getElementById('header').classList.add('small');
-    };
-    function restart(){
-      document.getElementById('play').style.display='none';
-      document.getElementById('start').style.display='flex';
-      document.getElementById('header').classList.remove('small');
-    }
-    function getRandomInt(max) {
-      return Math.floor(Math.random() * Math.floor(max));
-    }
-
-    function generate(){
-      return questions[getRandomInt(questions.length)];
-    };
-    document.getElementById('questions').innerHTML = generate();
-    function reload(){
-      document.getElementById('questions').innerHTML = generate();
-    }
-    </script>
+  </body>
+</html>
