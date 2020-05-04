@@ -1,4 +1,5 @@
-let questions = [
+(function (DCordeiro, undefined) {
+  DCordeiro.Questions = [
     'What was your first job?',
     'Have you ever met anyone famous?',
     'What are you reading right now?',
@@ -511,3 +512,4 @@ let questions = [
     'Are there times when you find it difficult to ask for help with your own work?',
     'What’s a time when you should have asked for help sooner but waited? Is there anything that might have made it easier for you to ask?'
   ];
+})(window.DCordeiro = window.DCordeiro || {});
