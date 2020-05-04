@@ -14,9 +14,9 @@
             document.getElementById('header').classList.remove('small');
         }
 
-        fillRandomBuffer(max) {
-            while (this.randomBuffer.length <= 10) {                
-                const randomInt = Math.floor(Math.random() * Math.floor(max));
+        fillRandomBuffer(maxRandom, bufferSize) {
+            while (this.randomBuffer.length <= bufferSize) {                
+                const randomInt = Math.floor(Math.random() * Math.floor(maxRandom));
                 if (this.randomBuffer.indexOf(randomInt) < 0) {
                     this.randomBuffer.push(randomInt)
                 }
@@ -25,7 +25,7 @@
         
         getRandomInt = (max) => {
             if (!this.randomBuffer.length) {
-                this.fillRandomBuffer(max)
+                this.fillRandomBuffer(max, 10)
             }
             return this.randomBuffer.pop()
         }
