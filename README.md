@@ -1,4 +1,4 @@
-# Icebreaker!
+# Icebreaker time!
 
 Use this to create a more personal environment with your teams and friends! You'll surely get to know each other better and find common interests
 
