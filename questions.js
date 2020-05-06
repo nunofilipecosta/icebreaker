@@ -509,5 +509,12 @@ let questions = [
     'How would you describe your communication style in 3 words?',
     'How does your particular communication style affect the people around you?',
     'Are there times when you find it difficult to ask for help with your own work?',
-    'What’s a time when you should have asked for help sooner but waited? Is there anything that might have made it easier for you to ask?'
+    'What’s a time when you should have asked for help sooner but waited? Is there anything that might have made it easier for you to ask?',
+    'Where does career growth rank in your list of priorities?',
+    'What gives you peace of mind?',
+    'Has social media made the world a better place?',
+    "What's the best meal you've ever had?",
+    'What impact has family had on your idea of success?',
+    'How has your taste in music changed over time?',
+    "What's more important: the individual or the collective good?"
   ];
