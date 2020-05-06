@@ -7,7 +7,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'UA-165385116-1');
   </script>
   <!-- Google Tag Manager -->
@@ -28,6 +27,20 @@
   <script async defer src="https://buttons.github.io/buttons.js"></script>
 
   <title>Icebreaker time!</title>
+  <meta name="title" content="Icebreaker time!">
+  <meta name="description" content="Icebreaker time! allows you to help break the ice with your teams and friends. It helps trigger great conversations with anyone!">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://davidscordeiro.github.io/icebreaker">
+  <meta property="og:title" content="Icebreaker time!">
+  <meta property="og:description" content="Icebreaker time! allows you to help break the ice with your teams and friends. It helps trigger great conversations with anyone!">
+  <meta property="og:image" content="">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://davidscordeiro.github.io/icebreaker">
+  <meta property="twitter:title" content="Icebreaker time!">
+  <meta property="twitter:description" content="Icebreaker time! allows you to help break the ice with your teams and friends. It helps trigger great conversations with anyone!">
+  <meta property="twitter:image" content="">
 </head>
 
 <body>
@@ -39,7 +52,7 @@
 
   <div class="wrapper">
     <div>
-      <a class="github-button" href="https://github.com/davidscordeiro/icebreaker/subscription" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-size="large" aria-label="Watch davidscordeiro/icebreaker on GitHub">Watch</a>
+      <a class="github-button" id="github-button" href="https://github.com/davidscordeiro/icebreaker/subscription" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-size="large" aria-label="Watch davidscordeiro/icebreaker on GitHub">Watch</a>
     </div>
     
       <!-- Header -->
@@ -64,7 +77,7 @@
         </div>
         <div class="button-bar">
           <button class="btn btn-primary" id="pick" onclick="icebreaker.IceBreaker.reload();">One more?</button>
-          <div><button class="btn-link" onclick="icebreaker.IceBreaker.restart();"><img src="Images/close.svg"></button></div>
+          <div><button class="btn-link" id="restart" onclick="icebreaker.IceBreaker.restart();"><img src="Images/close.svg"></button></div>
         </div>
       </div>
     </div>
