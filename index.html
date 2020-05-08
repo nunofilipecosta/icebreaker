@@ -62,8 +62,8 @@
       <!-- Launch page -->
       <div id="start" class="container align-center-top">
         <div style="display: block">
-          <div onclick="icebreaker.IceBreaker.reload();">
-            <button class="btn btn-primary" id="pick" onclick="icebreaker.IceBreaker.start();">Generate question</button>
+          <div onclick="reload();">
+            <button class="btn btn-primary" id="pick" onclick="start();">Generate question</button>
           </div>
         </div>
       </div>
@@ -72,12 +72,12 @@
       <div id="play" class="quote-container align-center" style="display: none;">
       <div style="display: block">
 
-        <div onclick="icebreaker.IceBreaker.reload();">
+        <div onclick="reload();">
           <h1 id="questions">quotes</h1>
         </div>
         <div class="button-bar">
-          <button class="btn btn-primary" id="pick" onclick="icebreaker.IceBreaker.reload();">One more?</button>
-          <div><button class="btn-link" id="restart" onclick="icebreaker.IceBreaker.restart();"><img src="Images/close.svg"></button></div>
+          <button class="btn btn-primary" id="pick" onclick="reload();">One more?</button>
+          <div><button class="btn-link" id="restart" onclick="restart();"><img src="Images/close.svg"></button></div>
         </div>
       </div>
     </div>
