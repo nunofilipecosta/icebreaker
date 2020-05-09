@@ -1,4 +1,4 @@
-(function (icebreaker, undefined) {
+(function (icebreaker) {
   icebreaker.Questions = [
     'What was your first job?',
     'Have you ever met anyone famous?',

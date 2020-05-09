@@ -1,22 +1,22 @@
-(function (icebreaker, undefined) {
+(function (icebreaker) {
     const USED_QUESTIONS_BUFFER_MAX_SIZE = 10;
 
-    class IceBreaker {
-        usedQuestionsBuffer = []
+    function IceBreaker() {
+        this.usedQuestionsBuffer = []
 
-        start = () => {
+        this.start = function () {
             document.getElementById('start').style.display='none';
             document.getElementById('play').style.display='flex';
             document.getElementById('header').classList.add('small');
         }
 
-        restart = () => {
+        this.restart = function () {
             document.getElementById('play').style.display='none';
             document.getElementById('start').style.display='flex';
             document.getElementById('header').classList.remove('small');
         }
         
-        getRandomInt = (max) => { 
+        this.getRandomInt = function (max) { 
             let bufferContainsRandomInt = false
             let randomInt = -1            
 
@@ -35,11 +35,11 @@
             return randomInt
         }
         
-        generate = () => {
+        this.generate = function () {
             return icebreaker.Questions[this.getRandomInt(icebreaker.Questions.length)]
         }
         
-        reload = () => {
+        this.reload = function () {
             document.getElementById('questions').innerHTML = this.generate();
         }
     }
