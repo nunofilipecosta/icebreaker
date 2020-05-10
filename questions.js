@@ -1,4 +1,5 @@
-let questions = [
+(function (icebreaker) {
+  icebreaker.Questions = [
     'What was your first job?',
     'Have you ever met anyone famous?',
     'What are you reading right now?',
@@ -601,3 +602,4 @@ let questions = [
     'What is your most valuable travel advice?',
     'Of all your possessions, what would be the hardest to give up?'
   ];
+})(window.icebreaker = window.icebreaker || {});
